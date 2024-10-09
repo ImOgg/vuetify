@@ -1,0 +1,23 @@
+{
+  "name": "my-vuetify-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "dayjs": "^1.11.13",
+    "sass": "^1.79.4",
+    "sass-loader": "^10.5.2",
+    "vue": "^3.5.10",
+    "vuetify": "^3.7.0-beta.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "vite": "^5.4.8"
+  }
+}
