@@ -26,6 +26,8 @@ const model = ref(0);
   <v-container>
     <!-- 可以輸入數值的select 注意如果資料是object 要用item-title 不然他會顯示object object-->
     <v-combobox label="Combobox" v-model="selectedItem" item-title="name" :items="items"></v-combobox>
+
+    <v-autocomplete label="Autocomplete" v-model="selectedItem" item-title="name" :items="items"></v-autocomplete>
     <!-- 普通的select -->
     <v-select v-model="selectedItem" :items="items" label="Select a State" item-title="name" item-value="id"></v-select>
     <p>Selected item: {{ selectedItem }}</p> <!-- 顯示選中的 id 或完整的物件 -->
@@ -53,6 +55,41 @@ const model = ref(0);
       <TimePicker v-model="date" label="選擇日期" />
 
       <v-btn color="primary" type="submit">提交</v-btn>
+      <v-btn>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <!-- 這裡放你的 SVG 路徑 -->
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>
+        123
+      </v-btn>
+
+      <v-card text="魚問貓我有沒有機會"></v-card>
+
+      <v-dialog max-width="500">
+        <template v-slot:activator="{ props: activatorProps }">
+          <v-btn v-bind="activatorProps" color="surface-variant" text="Open Dialog" variant="flat"></v-btn>
+        </template>
+
+        <template v-slot:default="{ isActive }">
+          <v-card title="Dialog">
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </v-card-text>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn text="Close Dialog" @click="isActive.value = false"></v-btn>
+            </v-card-actions>
+          </v-card>
+        </template>
+      </v-dialog>
+      <v-expansion-panels>
+        <v-expansion-panel title="Title"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima">
+        </v-expansion-panel>
+      </v-expansion-panels>
+      <v-file-input clearable label="File input"></v-file-input>
     </v-form>
   </v-container>
 </template>
