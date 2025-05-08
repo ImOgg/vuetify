@@ -7,6 +7,7 @@ import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 import App from './App.vue';
 import { zhHant, en } from 'vuetify/locale'; // 引入繁體中文與英文語言包
+import router from './router'
 
 // 創建 Vuetify 實例
 
@@ -32,4 +33,12 @@ const vuetify = createVuetify({
   },
 });
 
-createApp(App).use(vuetify).mount('#app');
+// createApp(App).use(vuetify).mount('#app');
+
+const app = createApp(App)
+
+// 使用路由
+app.use(router)
+app.use(vuetify)
+
+app.mount('#app')
