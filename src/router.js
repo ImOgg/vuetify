@@ -24,8 +24,8 @@ const routes = [
     component: Vuetify
   },
   {
-    path: '/trasation',
-    name: 'trasation',
+    path: '/transition',
+    name: 'transition',
     component: Trasation
   }
 ]

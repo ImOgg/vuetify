@@ -6,15 +6,15 @@
       <v-btn to="/">Home</v-btn>
       <v-btn to="/about">About</v-btn>
       <v-btn to="/vuetify">Vuetify</v-btn>
-      <v-btn to="/trasation">Trasation</v-btn>
+      <v-btn to="/transition">transition</v-btn>
     </v-app-bar>
 
     <v-main>
       <!-- 這裡是路由視圖，頁面內容會在這裡顯示 -->
       <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
+        <!-- <transition name="fade" mode="out-in"> -->
           <component :is="Component" />
-        </transition>
+        <!-- </transition> -->
       </router-view>
     </v-main>
 

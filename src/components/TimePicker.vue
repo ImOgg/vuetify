@@ -3,8 +3,8 @@
     <v-menu :close-on-content-click="true" location="bottom">
         <template v-slot:activator="{ props }">
             <!--v-text-field 加了這兩個參數 variant="underlined" density="compact" 會改變文本框的外觀  -->
-            <v-text-field v-model="formatDate"  v-bind="props" readonly 
-                append-inner-icon="mdi-calendar-month-outline" :label="label"></v-text-field>
+            <v-text-field v-model="formatDate" v-bind="props" readonly append-inner-icon="mdi-calendar-month-outline"
+                :label="label"></v-text-field>
         </template>
         <v-date-picker v-model="datetime"></v-date-picker>
     </v-menu>
@@ -20,7 +20,7 @@ const formatDate = ref<string>('');
 
 // 接收來自父組件的 `modelValue` 和 `label`
 defineProps<{
-    modelValue: string;
+    modelValue: string | null;
     label: string;
 }>();
 

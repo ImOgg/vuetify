@@ -52,7 +52,7 @@ const model = ref(0);
 
       <!-- 日期選擇框 -->
 
-      <TimePicker v-model="date" label="選擇日期" />
+      <TimePicker v-model="form.birthdate" label="選擇日期" />
 
       <v-btn color="primary" type="submit">提交</v-btn>
       <v-btn>
