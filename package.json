@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "@tanstack/vue-query": "^5.77.1",
     "dayjs": "^1.11.13",
     "sass": "^1.79.4",
     "sass-loader": "^10.5.2",
     "vue": "^3.5.10",
     "vue-router": "^4.5.1",
+    "vue-virtual-scroller": "^2.0.0-beta.8",
     "vuetify": "^3.7.0-beta.1"
   },
   "devDependencies": {

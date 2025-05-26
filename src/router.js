@@ -27,6 +27,11 @@ const routes = [
     path: '/transition',
     name: 'transition',
     component: Trasation
+  },
+  {
+    path:'/virtual-scroller',
+    name:'virtual-scroller',
+    component: () => import('./pages/VirtualScroller.vue')
   }
 ]
 

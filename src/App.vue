@@ -7,6 +7,7 @@
       <v-btn to="/about">About</v-btn>
       <v-btn to="/vuetify">Vuetify</v-btn>
       <v-btn to="/transition">transition</v-btn>
+      <v-btn to="/virtual-scroller">virtual-scroller</v-btn>
     </v-app-bar>
 
     <v-main>
