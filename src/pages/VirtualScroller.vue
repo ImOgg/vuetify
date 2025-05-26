@@ -21,6 +21,7 @@ const items = Array.from({ length: 10000 }, (_, i) => ({
 </script>
 
 <!-- 
+參考文章 -> https://ithelp.ithome.com.tw/articles/10326989
 方式一
 1. 安裝 vue-virtual-scroller 和 @tanstack/vue-query
   npm install vue-virtual-scroller@next @tanstack/vue-query
